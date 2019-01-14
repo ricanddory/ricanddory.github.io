@@ -1,0 +1,58 @@
+/*
+ Theme Name:     Bulletin
+ Theme URI:      http://sites.coloradocollege.edu/bulletin
+ Description:    Bulletin - A child theme of Snap, customized for the Colorado College Bulletin.
+ Author:         CC Communications Office
+ Author URI:     http://www.coloradocollege.edu
+ Template:       snap
+ Version:        1.0.0
+*/
+
+@import url("../snap/style.css");
+
+/* =Theme customization starts here
+-------------------------------------------------------------- */
+ /* used in _list-view.php */
+.cc-list-post-detail img{
+	float: right;
+	margin-left: 1em;
+ }
+.cc-list-post-detail:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* for sidebar <li>s */
+#sidebar li{
+	line-height: .9rem;
+	margin-bottom: .4rem;
+}
+
+/* for sidebar cover img */
+#sidebar img{
+	margin-bottom: .8rem;
+}
+
+/* for left-most column on homepage template (i.e. the blurb) 
+override hyphenation, it doesn't work well here */
+.page-template-homepage-php #blurb p{
+	-webkit-hyphens: none;
+	-moz-hyphens: none;
+    hyphens: none;
+}
+
+/* Hide footer link to theme author */
+#theme-byline{
+	display:none;
+}
+
+/* Hide posted date/time */
+time.post-detail{
+	display:none;
+}
+
+/* Hide social sharing buttons at top of post w/ featured image */
+.featured-image .sharedaddy{
+	display: none;
+}
